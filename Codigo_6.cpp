@@ -69,7 +69,7 @@ int main(){
     EsfPro=SumP/Area;
     i1=i+1;
     if (unidad==1) {
-      cout << "El Esfuerzo Promedio para el cilindro N° " << i1 << " es " << EsfPro << " Newtons.\n";
+      cout << "El Esfuerzo Promedio para el cilindro N° " << i1 << " es " << EsfPro << " Pa.\n";
     } else {
       cout << "El Esfuerzo Promedio para el cilindro N° " << i1 << " es " << 1000*EsfPro << " PSI.\n";
     }
