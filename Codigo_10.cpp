@@ -24,31 +24,31 @@ int main(){
   cout << "---------------------------------------------------------------------" << '\n';
 
   //Esfuerzo normal Promedio en el elemento AB
-  a=(2*5*sin(pi/4))/(sin(5*pi/12)*(0.5)*(1.8-d));
+  a=(4*P*sin(pi/4))/(sin(5*pi/12)*(1.8-d));
   cout << "Esfuerzo normal Promedio en el elemento AB = " << a <<" ksi.\n";
 
   //Esfuerzo normal Promedio en el elemento BC
-  b=(2*5*sin(pi/3))/(sin(5*pi/12)*(0.5)*(1.8-d));
+  b=(2*P*sin(pi/3))/(sin(5*pi/12)*(0.9));
   cout << "Esfuerzo normal Promedio en el elemento BC = " << b <<" ksi.\n";
 
   //Esfuerzo de corte Promedio en el Pin A
-  c=(2*5*sin(pi/4))/(sin(5*pi/12)*pi*d*d);
+  c=(4*P*sin(pi/4))/(sin(5*pi/12)*pi*d*d);
   cout << "Esfuerzo de corte Promedio en el Pin A = " << c <<" ksi. \n";
 
   //Esfuerzo de corte Promedio en el Pin C
-  d1=(2*5*sin(pi/3))/(sin(5*pi/12)*pi*d*d);
+  d1=(4*P*sin(pi/3))/(sin(5*pi/12)*pi*d*d);
   cout << "Esfuerzo de corte Promedio en el Pin C = " << d1 <<" ksi. \n";
 
   //Esfuerzo Promedio de apoyo en A en AB
-  e=(2*5*sin(pi/4))/(sin(5*pi/12)*(0.5)*d);
+  e=(4*P*sin(pi/4))/(sin(5*pi/12)*d);
   cout << "Esfuerzo Promedio de apoyo en A en AB = " << e <<" ksi. \n";
 
   //Esfuerzo Promedio de apoyo en C en BC
-  f=(2*5*sin(pi/3))/(sin(5*pi/12)*(0.5)*d);
+  f=(4*P*sin(pi/3))/(sin(5*pi/12)*d);
   cout << "Esfuerzo Promedio de apoyo en C en BC = " << f <<" ksi. \n";
 
   //Esfuerzo Promedio de apoyo en B en BC
-  g= (2*5*sin(pi/3))/(sin(5*pi/12)*d);
+  g= (2*P*sin(pi/3))/(sin(5*pi/12)*d);
   cout << "Esfuerzo Promedio de apoyo en B en BC = " << g <<" ksi. \n";
 
   return 0;
